@@ -2,23 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class CameraFollow : MonoBehaviour
 {
-    [SerializeField] private Transform player;
-    private Vector3 pos;
 
-    private void Awake()
+    public Transform followTransform;
+
+
+    // Update is called once per frame
+    void FixedUpdate()
     {
-        if (!player)
-        {
-            player = FindObjectOfType<Hero>().transform;
-        }
-    }
-    private void Update()
-    {
-        pos = player.position;
-        pos.z = -10f;
-        pos.y = pos.y + 3f;
-        transform.position = Vector3.Lerp(transform.position, pos, Time.deltaTime);
+        this.transform.position = new Vector3(followTransform.position.x, followTransform.position.y + 3f, this.transform.position.z);
+
+
     }
 }

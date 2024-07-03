@@ -5,6 +5,8 @@ using UnityEngine;
 public class Coolscript : MonoBehaviour
 {
     public float speed;
+    private float speedofrun = 8;
+    private float speedowalk = 3;
     public float jumpForce;
     private float moveInput;
 
@@ -63,6 +65,14 @@ public class Coolscript : MonoBehaviour
         {
             rb.velocity = Vector2.up * jumpForce;
         }
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            speed = speedofrun;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            speed = speedowalk;
+        }
     }
 
     void Flip()
@@ -72,4 +82,5 @@ public class Coolscript : MonoBehaviour
         Scaler.x *= -1;
         transform.localScale = Scaler;
     }
+
 }
