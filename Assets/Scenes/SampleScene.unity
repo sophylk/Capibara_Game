@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 7885666}
   - component: {fileID: 7885668}
   - component: {fileID: 7885667}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,7 +393,7 @@ GameObject:
   - component: {fileID: 46166717}
   - component: {fileID: 46166719}
   - component: {fileID: 46166718}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,7 +523,7 @@ GameObject:
   - component: {fileID: 49095785}
   - component: {fileID: 49095787}
   - component: {fileID: 49095786}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (69)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -653,7 +653,7 @@ GameObject:
   - component: {fileID: 59680163}
   - component: {fileID: 59680165}
   - component: {fileID: 59680164}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (65)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -850,7 +850,7 @@ GameObject:
   - component: {fileID: 71272441}
   - component: {fileID: 71272443}
   - component: {fileID: 71272442}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (84)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1454,7 +1454,7 @@ GameObject:
   - component: {fileID: 131845381}
   - component: {fileID: 131845383}
   - component: {fileID: 131845382}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1584,7 +1584,7 @@ GameObject:
   - component: {fileID: 143801720}
   - component: {fileID: 143801722}
   - component: {fileID: 143801721}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (59)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2318,7 +2318,7 @@ GameObject:
   - component: {fileID: 227122213}
   - component: {fileID: 227122215}
   - component: {fileID: 227122214}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (86)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2448,7 +2448,7 @@ GameObject:
   - component: {fileID: 234413768}
   - component: {fileID: 234413770}
   - component: {fileID: 234413769}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2578,7 +2578,7 @@ GameObject:
   - component: {fileID: 234966309}
   - component: {fileID: 234966311}
   - component: {fileID: 234966310}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (85)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2930,7 +2930,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.02514635}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2941,7 +2941,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98, y: 0.37}
+  m_Size: {x: 0.98, y: 0.3197073}
   m_EdgeRadius: 0
 --- !u!212 &296186337
 SpriteRenderer:
@@ -3258,7 +3258,7 @@ GameObject:
   - component: {fileID: 352403378}
   - component: {fileID: 352403380}
   - component: {fileID: 352403379}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3556,7 +3556,7 @@ GameObject:
   - component: {fileID: 385833340}
   - component: {fileID: 385833342}
   - component: {fileID: 385833341}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (60)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3870,7 +3870,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.016114682}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3881,7 +3881,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98, y: 0.37}
+  m_Size: {x: 0.98, y: 0.33777064}
   m_EdgeRadius: 0
 --- !u!212 &393594520
 SpriteRenderer:
@@ -3946,7 +3946,7 @@ GameObject:
   - component: {fileID: 395272465}
   - component: {fileID: 395272467}
   - component: {fileID: 395272466}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4160,7 +4160,7 @@ GameObject:
   - component: {fileID: 439435096}
   - component: {fileID: 439435098}
   - component: {fileID: 439435097}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4504,7 +4504,7 @@ GameObject:
   - component: {fileID: 468056838}
   - component: {fileID: 468056840}
   - component: {fileID: 468056839}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4634,7 +4634,7 @@ GameObject:
   - component: {fileID: 486227295}
   - component: {fileID: 486227297}
   - component: {fileID: 486227296}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (52)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4764,7 +4764,7 @@ GameObject:
   - component: {fileID: 499049894}
   - component: {fileID: 499049896}
   - component: {fileID: 499049895}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4894,7 +4894,7 @@ GameObject:
   - component: {fileID: 505451433}
   - component: {fileID: 505451435}
   - component: {fileID: 505451434}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (74)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5024,7 +5024,7 @@ GameObject:
   - component: {fileID: 514710308}
   - component: {fileID: 514710310}
   - component: {fileID: 514710309}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5154,7 +5154,7 @@ GameObject:
   - component: {fileID: 519123501}
   - component: {fileID: 519123503}
   - component: {fileID: 519123502}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5359,7 +5359,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.705998, y: 4.066, z: -85.15441}
+  m_LocalPosition: {x: 0.12599827, y: 4.066, z: -85.15441}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5605,7 +5605,7 @@ Transform:
   m_GameObject: {fileID: 556988469}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.72, y: 0.684, z: -75.15441}
+  m_LocalPosition: {x: -0.02, y: 0.53, z: -75.15441}
   m_LocalScale: {x: 3.5310555, y: 4.504869, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5842,7 +5842,7 @@ GameObject:
   - component: {fileID: 598839505}
   - component: {fileID: 598839507}
   - component: {fileID: 598839506}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (71)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5972,7 +5972,7 @@ GameObject:
   - component: {fileID: 616181146}
   - component: {fileID: 616181148}
   - component: {fileID: 616181147}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (56)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6169,7 +6169,7 @@ GameObject:
   - component: {fileID: 633802975}
   - component: {fileID: 633802977}
   - component: {fileID: 633802976}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (64)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6643,7 +6643,7 @@ GameObject:
   - component: {fileID: 659856379}
   - component: {fileID: 659856381}
   - component: {fileID: 659856380}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (89)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6827,7 +6827,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.018859714}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6838,7 +6838,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98, y: 0.37}
+  m_Size: {x: 0.98, y: 0.33228058}
   m_EdgeRadius: 0
 --- !u!212 &663976671
 SpriteRenderer:
@@ -6903,7 +6903,7 @@ GameObject:
   - component: {fileID: 675581229}
   - component: {fileID: 675581231}
   - component: {fileID: 675581230}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (81)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7087,7 +7087,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.014503248}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7098,7 +7098,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98, y: 0.37}
+  m_Size: {x: 0.98, y: 0.34099352}
   m_EdgeRadius: 0
 --- !u!212 &681824866
 SpriteRenderer:
@@ -7729,7 +7729,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.019337617}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7740,7 +7740,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98, y: 0.37}
+  m_Size: {x: 0.98, y: 0.33132476}
   m_EdgeRadius: 0
 --- !u!212 &733628299
 SpriteRenderer:
@@ -7805,7 +7805,7 @@ GameObject:
   - component: {fileID: 735378598}
   - component: {fileID: 735378600}
   - component: {fileID: 735378599}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (91)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8019,7 +8019,7 @@ GameObject:
   - component: {fileID: 749243889}
   - component: {fileID: 749243891}
   - component: {fileID: 749243890}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (82)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8569,7 +8569,7 @@ GameObject:
   - component: {fileID: 787745217}
   - component: {fileID: 787745219}
   - component: {fileID: 787745218}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8997,7 +8997,7 @@ GameObject:
   - component: {fileID: 859385864}
   - component: {fileID: 859385866}
   - component: {fileID: 859385865}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9425,7 +9425,7 @@ GameObject:
   - component: {fileID: 890935454}
   - component: {fileID: 890935456}
   - component: {fileID: 890935455}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (75)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9555,7 +9555,7 @@ GameObject:
   - component: {fileID: 896872592}
   - component: {fileID: 896872594}
   - component: {fileID: 896872593}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9899,7 +9899,7 @@ GameObject:
   - component: {fileID: 906516706}
   - component: {fileID: 906516708}
   - component: {fileID: 906516707}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (90)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10197,7 +10197,7 @@ GameObject:
   - component: {fileID: 926779260}
   - component: {fileID: 926779262}
   - component: {fileID: 926779261}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10411,7 +10411,7 @@ GameObject:
   - component: {fileID: 930936385}
   - component: {fileID: 930936387}
   - component: {fileID: 930936386}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (79)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10541,7 +10541,7 @@ GameObject:
   - component: {fileID: 937487230}
   - component: {fileID: 937487232}
   - component: {fileID: 937487231}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (62)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10671,7 +10671,7 @@ GameObject:
   - component: {fileID: 941200412}
   - component: {fileID: 941200414}
   - component: {fileID: 941200413}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (58)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10801,7 +10801,7 @@ GameObject:
   - component: {fileID: 957807326}
   - component: {fileID: 957807328}
   - component: {fileID: 957807327}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (70)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10931,7 +10931,7 @@ GameObject:
   - component: {fileID: 972109616}
   - component: {fileID: 972109618}
   - component: {fileID: 972109617}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11313,7 +11313,7 @@ GameObject:
   - component: {fileID: 1027427350}
   - component: {fileID: 1027427352}
   - component: {fileID: 1027427351}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11573,7 +11573,7 @@ GameObject:
   - component: {fileID: 1037751805}
   - component: {fileID: 1037751807}
   - component: {fileID: 1037751806}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11787,7 +11787,7 @@ GameObject:
   - component: {fileID: 1057636532}
   - component: {fileID: 1057636534}
   - component: {fileID: 1057636533}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12184,7 +12184,7 @@ GameObject:
   - component: {fileID: 1117743856}
   - component: {fileID: 1117743858}
   - component: {fileID: 1117743857}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12398,7 +12398,7 @@ GameObject:
   - component: {fileID: 1160678609}
   - component: {fileID: 1160678611}
   - component: {fileID: 1160678610}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12842,7 +12842,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.022002995}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -12853,7 +12853,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98, y: 0.37}
+  m_Size: {x: 0.98, y: 0.325994}
   m_EdgeRadius: 0
 --- !u!212 &1219149147
 SpriteRenderer:
@@ -13086,7 +13086,7 @@ GameObject:
   - component: {fileID: 1222807936}
   - component: {fileID: 1222807938}
   - component: {fileID: 1222807937}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (57)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13216,7 +13216,7 @@ GameObject:
   - component: {fileID: 1223728316}
   - component: {fileID: 1223728318}
   - component: {fileID: 1223728317}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (55)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13344,9 +13344,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1224576120}
-  - component: {fileID: 1224576119}
   - component: {fileID: 1224576118}
   - component: {fileID: 1224576121}
+  - component: {fileID: 1224576122}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Player
@@ -13366,7 +13366,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.971117
+  m_Mass: 0.9448564
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -13381,7 +13381,44 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &1224576119
+--- !u!4 &1224576120
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224576117}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.01, y: -4.066, z: 75.15441}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 556988470}
+  - {fileID: 519420032}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1224576121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224576117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d50ffe705eb4fa468cbc70cf7190ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  jumpForce: 8
+  groundCheck: {fileID: 1224576120}
+  checkRadius: 0.5
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 8
+  extraJumpsValue: 1
+--- !u!61 &1224576122
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13413,7 +13450,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 9.710302, y: 0.59739304}
+  m_Offset: {x: -0.050959587, y: 0.5519738}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -13424,40 +13461,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7361374, y: 1.3192062}
+  m_Size: {x: 0.7395401, y: 1.277627}
   m_EdgeRadius: 0
---- !u!4 &1224576120
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224576117}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.705998, y: -4.066, z: 75.15441}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 556988470}
-  - {fileID: 519420032}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1224576121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224576117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcc69afb99b9b8346b0b236cd0375749, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.015
-  lives: 5
-  jumpForce: 9
 --- !u!1 &1226254096
 GameObject:
   m_ObjectHideFlags: 0
@@ -13469,7 +13474,7 @@ GameObject:
   - component: {fileID: 1226254097}
   - component: {fileID: 1226254099}
   - component: {fileID: 1226254098}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13599,7 +13604,7 @@ GameObject:
   - component: {fileID: 1241219811}
   - component: {fileID: 1241219813}
   - component: {fileID: 1241219812}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13729,7 +13734,7 @@ GameObject:
   - component: {fileID: 1241375320}
   - component: {fileID: 1241375322}
   - component: {fileID: 1241375321}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (68)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13859,7 +13864,7 @@ GameObject:
   - component: {fileID: 1260439558}
   - component: {fileID: 1260439560}
   - component: {fileID: 1260439559}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14127,7 +14132,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.02862589}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -14138,7 +14143,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98, y: 0.37}
+  m_Size: {x: 0.98, y: 0.31274822}
   m_EdgeRadius: 0
 --- !u!212 &1278717930
 SpriteRenderer:
@@ -14341,7 +14346,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.022003062}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -14352,7 +14357,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98, y: 0.37}
+  m_Size: {x: 0.98, y: 0.3259939}
   m_EdgeRadius: 0
 --- !u!212 &1312981678
 SpriteRenderer:
@@ -14631,7 +14636,7 @@ GameObject:
   - component: {fileID: 1344433983}
   - component: {fileID: 1344433985}
   - component: {fileID: 1344433984}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14761,7 +14766,7 @@ GameObject:
   - component: {fileID: 1354555292}
   - component: {fileID: 1354555294}
   - component: {fileID: 1354555293}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (80)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14945,7 +14950,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.017726183}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -14956,7 +14961,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98, y: 0.37}
+  m_Size: {x: 0.98, y: 0.33454764}
   m_EdgeRadius: 0
 --- !u!212 &1365001927
 SpriteRenderer:
@@ -15205,7 +15210,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.015133798}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -15216,7 +15221,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98, y: 0.37}
+  m_Size: {x: 0.98, y: 0.3397324}
   m_EdgeRadius: 0
 --- !u!212 &1374329671
 SpriteRenderer:
@@ -15365,7 +15370,7 @@ GameObject:
   - component: {fileID: 1400041834}
   - component: {fileID: 1400041836}
   - component: {fileID: 1400041835}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (77)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15923,7 +15928,7 @@ GameObject:
   - component: {fileID: 1435805686}
   - component: {fileID: 1435805688}
   - component: {fileID: 1435805687}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (53)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16328,7 +16333,7 @@ GameObject:
   - component: {fileID: 1485597071}
   - component: {fileID: 1485597073}
   - component: {fileID: 1485597072}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (73)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16458,7 +16463,7 @@ GameObject:
   - component: {fileID: 1486467083}
   - component: {fileID: 1486467085}
   - component: {fileID: 1486467084}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (54)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16726,7 +16731,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.016114682}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -16737,7 +16742,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98, y: 0.37}
+  m_Size: {x: 0.98, y: 0.33777064}
   m_EdgeRadius: 0
 --- !u!212 &1510182290
 SpriteRenderer:
@@ -16946,7 +16951,7 @@ GameObject:
   - component: {fileID: 1560404243}
   - component: {fileID: 1560404245}
   - component: {fileID: 1560404244}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (92)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17290,7 +17295,7 @@ GameObject:
   - component: {fileID: 1571115823}
   - component: {fileID: 1571115825}
   - component: {fileID: 1571115824}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17688,7 +17693,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.012891747}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -17699,7 +17704,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98, y: 0.37}
+  m_Size: {x: 0.98, y: 0.34421653}
   m_EdgeRadius: 0
 --- !u!212 &1605766451
 SpriteRenderer:
@@ -17764,7 +17769,7 @@ GameObject:
   - component: {fileID: 1607674451}
   - component: {fileID: 1607674453}
   - component: {fileID: 1607674452}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (78)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18024,7 +18029,7 @@ GameObject:
   - component: {fileID: 1638291007}
   - component: {fileID: 1638291009}
   - component: {fileID: 1638291008}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18582,7 +18587,7 @@ GameObject:
   - component: {fileID: 1703197852}
   - component: {fileID: 1703197854}
   - component: {fileID: 1703197853}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (76)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18712,7 +18717,7 @@ GameObject:
   - component: {fileID: 1717568151}
   - component: {fileID: 1717568153}
   - component: {fileID: 1717568152}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18842,7 +18847,7 @@ GameObject:
   - component: {fileID: 1717947561}
   - component: {fileID: 1717947563}
   - component: {fileID: 1717947562}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (67)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19026,7 +19031,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.018859714}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -19037,7 +19042,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98, y: 0.37}
+  m_Size: {x: 0.98, y: 0.33228058}
   m_EdgeRadius: 0
 --- !u!212 &1723079537
 SpriteRenderer:
@@ -19446,7 +19451,7 @@ GameObject:
   - component: {fileID: 1747649196}
   - component: {fileID: 1747649198}
   - component: {fileID: 1747649197}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (66)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19576,7 +19581,7 @@ GameObject:
   - component: {fileID: 1752458752}
   - component: {fileID: 1752458754}
   - component: {fileID: 1752458753}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (72)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19706,7 +19711,7 @@ GameObject:
   - component: {fileID: 1781898226}
   - component: {fileID: 1781898228}
   - component: {fileID: 1781898227}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20474,7 +20479,7 @@ GameObject:
   - component: {fileID: 1825942625}
   - component: {fileID: 1825942627}
   - component: {fileID: 1825942626}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20734,7 +20739,7 @@ GameObject:
   - component: {fileID: 1828799689}
   - component: {fileID: 1828799691}
   - component: {fileID: 1828799690}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (83)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20864,7 +20869,7 @@ GameObject:
   - component: {fileID: 1829734467}
   - component: {fileID: 1829734469}
   - component: {fileID: 1829734468}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (93)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21048,7 +21053,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.017561443}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -21059,7 +21064,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98, y: 0.37}
+  m_Size: {x: 0.98, y: 0.33487713}
   m_EdgeRadius: 0
 --- !u!212 &1838374466
 SpriteRenderer:
@@ -21384,7 +21389,7 @@ GameObject:
   - component: {fileID: 1880150771}
   - component: {fileID: 1880150773}
   - component: {fileID: 1880150772}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21514,7 +21519,7 @@ GameObject:
   - component: {fileID: 1889659571}
   - component: {fileID: 1889659573}
   - component: {fileID: 1889659572}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21644,7 +21649,7 @@ GameObject:
   - component: {fileID: 1890969969}
   - component: {fileID: 1890969971}
   - component: {fileID: 1890969970}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22034,7 +22039,7 @@ GameObject:
   - component: {fileID: 1943909847}
   - component: {fileID: 1943909849}
   - component: {fileID: 1943909848}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (63)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22332,7 +22337,7 @@ GameObject:
   - component: {fileID: 1963980660}
   - component: {fileID: 1963980662}
   - component: {fileID: 1963980661}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (88)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22936,7 +22941,7 @@ GameObject:
   - component: {fileID: 2000742783}
   - component: {fileID: 2000742785}
   - component: {fileID: 2000742784}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (61)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23066,7 +23071,7 @@ GameObject:
   - component: {fileID: 2019817431}
   - component: {fileID: 2019817433}
   - component: {fileID: 2019817432}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23212,8 +23217,8 @@ Transform:
   m_GameObject: {fileID: 2026211014}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.88, y: -4.8, z: 0}
-  m_LocalScale: {x: 4.8265, y: 3.7027, z: 1}
+  m_LocalPosition: {x: -24.7596, y: -4.633, z: 0}
+  m_LocalScale: {x: 5.245718, y: 2.3406193, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 624724820}
@@ -23250,7 +23255,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.025146347}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -23261,7 +23266,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98, y: 0.37}
+  m_Size: {x: 0.98, y: 0.2568416}
   m_EdgeRadius: 0
 --- !u!212 &2026211017
 SpriteRenderer:
@@ -23456,7 +23461,7 @@ GameObject:
   - component: {fileID: 2041711780}
   - component: {fileID: 2041711782}
   - component: {fileID: 2041711781}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Earth (87)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
