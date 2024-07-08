@@ -2,23 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerAreaCheck : MonoBehaviour
+namespace Assets.Scripts.Enemy
 {
-    private Enemy_behaviour enemyParent;
 
-    private void Awake()
-    {
-        enemyParent = GetComponentInParent<Enemy_behaviour>();
-    }
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    public class TriggerAreaCheck : MonoBehaviour
     {
-        if (collider.gameObject.CompareTag("Player"))
+        private Enemy_behaviour enemyParent;
+
+        private void Awake()
         {
-            gameObject.SetActive(false);
-            enemyParent.target = collider.transform;
-            enemyParent.inRange = true;
-            enemyParent.hotZone.SetActive(true);
+            enemyParent = GetComponentInParent<Enemy_behaviour>();
+        }
+
+        private void OnTriggerEnter2D(Collider2D collider)
+        {
+            if (collider.gameObject.CompareTag("Player"))
+            {
+                gameObject.SetActive(false);
+                enemyParent.target = collider.transform;
+                enemyParent.inRange = true;
+                enemyParent.hotZone.SetActive(true);
+            }
         }
     }
 }

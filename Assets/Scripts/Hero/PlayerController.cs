@@ -23,6 +23,8 @@ public class Coolscript : MonoBehaviour
     private int extraJumps;
     public int extraJumpsValue;
 
+    private Animator anim;
+
     private void Start()
     {
         extraJumps = extraJumpsValue;
@@ -68,6 +70,7 @@ public class Coolscript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             speed = speedofrun;
+            
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
