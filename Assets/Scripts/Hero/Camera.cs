@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraFollow : MonoBehaviour
+public class CameraController : MonoBehaviour
 {
+    private float smoothTime = 0.05f;
+    private float velocity = 0.0f;
 
-    public Transform followTransform;
+    [SerializeField] private Transform target;
 
-
-    // Update is called once per frame
-    void FixedUpdate()
+    private void Update()
     {
-        this.transform.position = new Vector3(followTransform.position.x, followTransform.position.y + 2f, this.transform.position.z);
-
-
+        float newPos = Mathf.SmoothDamp(transform.position.y, target.position.y + 2f, ref velocity, smoothTime);
+        transform.position = new Vector3(target.position.x, newPos, -10f);
     }
 }
