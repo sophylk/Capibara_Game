@@ -27006,7 +27006,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1281779147}
-  - component: {fileID: 1281779146}
+  - component: {fileID: 1281779148}
   m_Layer: 0
   m_Name: ButtonHelper
   m_TagString: Untagged
@@ -27014,18 +27014,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1281779146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1281779145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a33dbc1e4462e1408dd233500785906, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1281779147
 Transform:
   m_ObjectHideFlags: 0
@@ -27041,6 +27029,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1281779148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281779145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f6709bd424b246a53a928b5e02852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1283339112
 GameObject:
   m_ObjectHideFlags: 0
@@ -34833,9 +34833,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1281779146}
-        m_TargetAssemblyTypeName: ExitGame, Assembly-CSharp
-        m_MethodName: ExitFunction
+      - m_Target: {fileID: 1281779148}
+        m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
+        m_MethodName: MenuBut
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38971,8 +38971,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_Font: {fileID: 12800000, guid: 98c3ea0ed44578d42b6512e1fb2c9fe9, type: 3}
+    m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -38983,7 +38983,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Exit
+  m_Text: Menu
 --- !u!222 &1859221662
 CanvasRenderer:
   m_ObjectHideFlags: 0
