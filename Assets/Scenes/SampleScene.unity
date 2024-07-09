@@ -11530,7 +11530,7 @@ Animator:
   m_GameObject: {fileID: 556988469}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3d6c3ab807c67f94486ecc41e4292d5d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6e2c2758488ee3c47ae3131ee75e532b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -26368,7 +26368,7 @@ Transform:
   m_GameObject: {fileID: 1224576117}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 71.1, y: -3.91, z: 75.15441}
+  m_LocalPosition: {x: 0.12, y: -3.91, z: 75.15441}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26390,6 +26390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d50ffe705eb4fa468cbc70cf7190ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tr: {fileID: 0}
   rb: {fileID: 1224576118}
   groundCheck: {fileID: 1753971470}
   groundLayer:
@@ -26399,6 +26400,7 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 256
+  animator: {fileID: 556988472}
 --- !u!61 &1224576122
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26476,7 +26478,7 @@ Animator:
   m_GameObject: {fileID: 1224576117}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3d6c3ab807c67f94486ecc41e4292d5d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6e2c2758488ee3c47ae3131ee75e532b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
