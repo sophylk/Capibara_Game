@@ -21,26 +21,27 @@ public class Coolscript : MonoBehaviour
     private float wallJumpingDuration = 0.4f;
     private Vector2 wallJumpingPower = new Vector2(8f, 16f);
 
-
+    [SerializeField] private TrailRenderer tr;
     [SerializeField] private Rigidbody2D rb;
+
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+
     [SerializeField] private Transform wallCheck;
     [SerializeField] private LayerMask wallLayer;
 
+    [SerializeField] private Animator animator;
 
-
-
-    private void Start()
-    {
-        
-    }
+    
+    private bool isDashing = false;
+    private bool canDash = true;
+    private float dashSpeed = 20f;
+    private float dashDuration = 0.2f;
+    private float dashCooldown = 1f;
 
     private void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-
-
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
@@ -60,33 +61,48 @@ public class Coolscript : MonoBehaviour
             Flip();
         }
 
+        if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
+        {
+            if (canDash)
+            {
+                StartCoroutine(Dash());
+            }
+        }
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            
+            animator.SetBool("Run", true);
+            animator.SetBool("Walk", false);
+
             speed = speedrun;
 
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-
+            animator.SetBool("Run", false);
+            animator.SetBool("Walk", true);
+            
             speed = speedwalk;
         }
 
-
+        bool isWalk = Mathf.Abs(horizontal) > 0.1 && !Input.GetKey(KeyCode.LeftShift);
+        animator.SetBool("Walk", isWalk);
+        
 
     }
 
     private void FixedUpdate()
     {
-        if (!isWallJumping)
+        if (!isWallJumping && !isDashing)
         {
+            
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
         }
     }
 
     private bool IsGrounded()
     {
+        
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
@@ -157,5 +173,21 @@ public class Coolscript : MonoBehaviour
         }
     }
 
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f;
+        rb.velocity = new Vector2(horizontal * dashSpeed, 0f);
 
+        yield return new WaitForSeconds(dashDuration);
+
+        rb.gravityScale = originalGravity;
+        isDashing = false;
+        speed = speedwalk;
+
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
+    }
 }
