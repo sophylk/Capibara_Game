@@ -17,6 +17,7 @@ namespace Assets.Scripts.Enemy
         [HideInInspector] public bool inRange; // Check if Player is in range
         public GameObject triggerArea;
         public GameObject hotZone;
+
         #endregion
 
         #region Private Variables
@@ -38,7 +39,9 @@ namespace Assets.Scripts.Enemy
         {
             if (!attackMode)
             {
+
                 Move();
+                Cooldown();
             }
 
             if (!InsideofLimits() && !inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack_bringer_of_death"))
@@ -60,10 +63,12 @@ namespace Assets.Scripts.Enemy
 
             if (distance > attackDistance)
             {
+                attackMode = false;
                 StopAttack();
             }
             else if (attackDistance >= distance && cooling == false)
             {
+               
                 Attack();
             }
 
@@ -71,6 +76,7 @@ namespace Assets.Scripts.Enemy
             {
                 Cooldown();
                 anim.SetBool("Attack", false);
+
             }
         }
 
@@ -90,6 +96,8 @@ namespace Assets.Scripts.Enemy
         {
             timer = intTimer; //Resets Timer when Player enters Attack Range
             attackMode = true; // To check if Enemy can still attack or not
+            timer = intTimer;
+
 
             anim.SetBool("canWalk", false);
             anim.SetBool("Attack", true);
@@ -99,14 +107,15 @@ namespace Assets.Scripts.Enemy
         {
             timer -= Time.deltaTime;
 
-            if (timer <= 0 && cooling && attackMode)
+            if (timer <= 0 )
             {
                 cooling = false;
-                timer = intTimer;
+
             }
             else
             {
                 cooling = true;
+
             }
         }
 

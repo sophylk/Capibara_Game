@@ -28,9 +28,12 @@ public class Coolscript : MonoBehaviour
     [SerializeField] private Transform wallCheck;
     [SerializeField] private LayerMask wallLayer;
 
-    public void Start()
+
+
+
+    private void Start()
     {
-       
+        
     }
 
     private void Update()
@@ -69,6 +72,8 @@ public class Coolscript : MonoBehaviour
 
             speed = speedwalk;
         }
+
+
 
     }
 
@@ -151,5 +156,6 @@ public class Coolscript : MonoBehaviour
             transform.localScale = localScale;
         }
     }
+
 
 }
