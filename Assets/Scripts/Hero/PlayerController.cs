@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Coolscript : MonoBehaviour
 {
+    private BoxCollider2D hitBox;
+
     private float horizontal;
     private float speed = 3;
     private float speedwalk = 3;
@@ -39,8 +41,31 @@ public class Coolscript : MonoBehaviour
     private float dashDuration = 0.2f;
     private float dashCooldown = 1f;
 
+
+    private void Start()
+    {
+
+        hitBox = transform.Find("hitBox").GetComponent<BoxCollider2D>();
+    }
+
+
     private void Update()
     {
+
+
+        if (Input.GetKeyDown(KeyCode.F)) // Attack on Space key press.
+        {
+            animator.SetBool("Attack", true);
+            Invoke("ActivateHitbox", 0.2f); // Activate hitbox after 0.2 seconds.
+            Invoke("DeactivateHitbox", 0.4f); // Deactivate hitbox after 0.4 seconds.
+        }
+        else if (Input.GetKeyUp(KeyCode.F)) // Attack on Space key press.
+        {
+            animator.SetBool("Attack", false);
+            
+        }
+
+
         horizontal = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
@@ -190,4 +215,16 @@ public class Coolscript : MonoBehaviour
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }
+
+    void ActivateHitbox()
+    {
+        hitBox.gameObject.SetActive(true);
+    }
+
+    void DeactivateHitbox()
+    {
+        hitBox.gameObject.SetActive(false);
+    }
+
+
 }
