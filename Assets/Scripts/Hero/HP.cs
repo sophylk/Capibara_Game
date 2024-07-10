@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-
 
 public class HealthSystem : MonoBehaviour
 {
@@ -15,7 +11,7 @@ public class HealthSystem : MonoBehaviour
 
     public void Update()
     {
-        if (health > numberofLives) 
+        if (health > numberofLives)
         {
             health = numberofLives;
         }
@@ -41,20 +37,20 @@ public class HealthSystem : MonoBehaviour
                 lives[i].enabled = false;
             }
         }
-    
+
     }
     public void TakeDamage(int amount)
     {
         health -= amount;
         if (health <= 0)
         {
-            restartGame();
+            Destroy(gameObject);
         }
     }
-
-    public void restartGame()
+    public void ReverseDamage(int amount, GameObject gameObject2)
     {
-        SceneManager.LoadScene("SampleScene");
+        health += amount;
+        Destroy(gameObject2);
     }
 
 }
