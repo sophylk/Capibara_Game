@@ -43,6 +43,7 @@ public class Coolscript : MonoBehaviour
 
     public float damage;
 
+
     private void Start()
     {
 
@@ -54,13 +55,13 @@ public class Coolscript : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown(KeyCode.Mouse0)) // Attack on Space key press.
+        if (Input.GetKeyDown(KeyCode.F)) // Attack on Space key press.
         {
             animator.SetBool("Attack", true);
             Invoke("ActivateHitbox", 0.2f); // Activate hitbox after 0.2 seconds.
             Invoke("DeactivateHitbox", 0.4f); // Deactivate hitbox after 0.4 seconds.
         }
-        else if (Input.GetKeyUp(KeyCode.Mouse0)) // Attack on Space key press.
+        else if (Input.GetKeyUp(KeyCode.F)) // Attack on Space key press.
         {
             animator.SetBool("Attack", false);
             
@@ -71,11 +72,13 @@ public class Coolscript : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
+            animator.SetBool("Jump", true);
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
+            
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
@@ -87,7 +90,7 @@ public class Coolscript : MonoBehaviour
             Flip();
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse1) || Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
         {
             if (canDash)
             {
@@ -154,6 +157,7 @@ public class Coolscript : MonoBehaviour
     {
         if (isWallSliding)
         {
+           
             isWallJumping = false;
             wallJumpingDirection = -transform.localScale.x;
             wallJumpingCounter = wallJumpingTime;
@@ -167,6 +171,7 @@ public class Coolscript : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && wallJumpingCounter > 0f)
         {
+            animator.SetBool("Jump", true);
             isWallJumping = true;
             rb.velocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y);
             wallJumpingCounter = 0f;
@@ -178,8 +183,12 @@ public class Coolscript : MonoBehaviour
                 localScale.x *= -1f;
                 transform.localScale = localScale;
             }
-
+            
             Invoke(nameof(StopWallJumping), wallJumpingDuration);
+        }
+        if (Input.GetButtonUp("Jump"))
+        {
+            animator.SetBool("Jump", false);
         }
     }
 

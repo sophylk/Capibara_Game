@@ -73,7 +73,7 @@ namespace Assets.Scripts.Enemy
             }
             else if (attackDistance >= distance && cooling == false)
             {
-               
+
                 Attack();
             }
 
@@ -112,7 +112,7 @@ namespace Assets.Scripts.Enemy
         {
             timer -= Time.deltaTime;
 
-            if (timer <= 0 )
+            if (timer <= 0)
             {
                 cooling = false;
 
@@ -175,16 +175,16 @@ namespace Assets.Scripts.Enemy
 
         public void TakeDamage()
         {
-            
+
             if (health <= 0)
             {
                 //anim.SetBool("canDie", true);
                 Destroy(this.gameObject, 0.75f);
                 anim.Play("Death_bringer_of_death");
                 hero_hp.health += 1;
-                
+
             }
-            else 
+            else
             {
                 health -= _damage.damage;
                 anim.Play("Hurt_bringer_of_death");
