@@ -17,6 +17,11 @@ namespace Assets.Scripts.Enemy
         [HideInInspector] public bool inRange; // Check if Player is in range
         public GameObject triggerArea;
         public GameObject hotZone;
+        public float health;
+
+
+        public Coolscript _damage;
+        public HealthSystem hero_hp;
 
         #endregion
 
@@ -168,6 +173,23 @@ namespace Assets.Scripts.Enemy
             transform.eulerAngles = rotation;
         }
 
+        public void TakeDamage()
+        {
+            
+            if (health <= 0)
+            {
+                //anim.SetBool("canDie", true);
+                Destroy(this.gameObject, 0.75f);
+                anim.Play("Death_bringer_of_death");
+                hero_hp.health += 1;
+                
+            }
+            else 
+            {
+                health -= _damage.damage;
+                anim.Play("Hurt_bringer_of_death");
+            }
+        }
 
     }
 }

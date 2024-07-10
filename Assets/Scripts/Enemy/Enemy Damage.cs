@@ -28,7 +28,7 @@ public class EnemyDamage : MonoBehaviour
             WeaponCollider.gameObject.SetActive(false);
             WeaponCollider.enabled = false;
 
-            Invoke("EnableCollider", 1f); // Re-enable collider after 1 second
+            Invoke("EnableCollider", 2f); // Re-enable collider after 1 second
 
         }
     }

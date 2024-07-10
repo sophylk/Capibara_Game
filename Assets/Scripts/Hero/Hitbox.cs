@@ -2,14 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hitbox : MonoBehaviour
+
+namespace Assets.Scripts.Enemy
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class Hitbox : MonoBehaviour
     {
-        if (collision.CompareTag("Enemy"))
+        //public Enemy_behaviour[] damage;
+        public void OnTriggerEnter2D(Collider2D collision)
         {
-            // Damage or destroy the enemy.
-            Destroy(collision.gameObject);
+            //Debug.Log("Hitbox collided with: " +collision.gameObject);
+            if (collision.CompareTag("Enemy") )
+            {
+
+                Enemy_behaviour b = collision.gameObject.GetComponent<Enemy_behaviour>();
+
+
+                b.TakeDamage();
+            }
         }
     }
 }

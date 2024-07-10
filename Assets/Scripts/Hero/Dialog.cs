@@ -38,7 +38,7 @@ public class Dialog : MonoBehaviour
             Walk = true;
 
         }
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) && Walk)
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && Walk)
         {
 
             title.text = message_0;
@@ -53,7 +53,7 @@ public class Dialog : MonoBehaviour
             Slash = true;
             Jump = false;
         }
-        if (Input.GetKey(KeyCode.E) && Slash)
+        if ((Input.GetKey(KeyCode.E) || Input.GetKey(KeyCode.Q)) && Slash)
         {
 
             title.text = message_2;

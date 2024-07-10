@@ -41,6 +41,7 @@ public class Coolscript : MonoBehaviour
     private float dashDuration = 0.2f;
     private float dashCooldown = 1f;
 
+    public float damage;
 
     private void Start()
     {
@@ -53,13 +54,13 @@ public class Coolscript : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown(KeyCode.F)) // Attack on Space key press.
+        if (Input.GetKeyDown(KeyCode.Mouse0)) // Attack on Space key press.
         {
             animator.SetBool("Attack", true);
             Invoke("ActivateHitbox", 0.2f); // Activate hitbox after 0.2 seconds.
             Invoke("DeactivateHitbox", 0.4f); // Deactivate hitbox after 0.4 seconds.
         }
-        else if (Input.GetKeyUp(KeyCode.F)) // Attack on Space key press.
+        else if (Input.GetKeyUp(KeyCode.Mouse0)) // Attack on Space key press.
         {
             animator.SetBool("Attack", false);
             
@@ -86,7 +87,7 @@ public class Coolscript : MonoBehaviour
             Flip();
         }
 
-        if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Mouse1) || Input.GetKeyDown(KeyCode.E))
         {
             if (canDash)
             {

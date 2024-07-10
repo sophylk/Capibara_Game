@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -44,7 +45,7 @@ public class HealthSystem : MonoBehaviour
         health -= amount;
         if (health <= 0)
         {
-            Destroy(gameObject);
+            SceneManager.LoadScene("SampleScene");
         }
     }
     public void ReverseDamage(int amount, GameObject gameObject2)
