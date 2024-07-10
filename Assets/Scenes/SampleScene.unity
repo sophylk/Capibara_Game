@@ -21311,7 +21311,6 @@ GameObject:
   m_Component:
   - component: {fileID: 556988470}
   - component: {fileID: 556988471}
-  - component: {fileID: 556988473}
   - component: {fileID: 556988472}
   m_Layer: 0
   m_Name: Square
@@ -21408,18 +21407,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &556988473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556988469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5750abd131058a43a6bed3bbdb6effa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &558884275
 GameObject:
   m_ObjectHideFlags: 0
@@ -50652,7 +50639,6 @@ GameObject:
   - component: {fileID: 1224576118}
   - component: {fileID: 1224576126}
   - component: {fileID: 1224576121}
-  - component: {fileID: 1224576123}
   - component: {fileID: 1224576122}
   - component: {fileID: 1224576125}
   m_Layer: 0
@@ -50776,18 +50762,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7395401, y: 1.4744575}
   m_EdgeRadius: 0
---- !u!114 &1224576123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224576117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75b0bec1aa11bd0478862279a49c4616, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &1224576125
 Animator:
   serializedVersion: 5
@@ -50816,11 +50790,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224576117}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5750abd131058a43a6bed3bbdb6effa, type: 3}
+  m_Script: {fileID: 11500000, guid: 62740a6a65694b84dad42d012ec03500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 5
+  numberofLives: 5
+  lives:
+  - {fileID: 1368552502}
+  - {fileID: 150287021}
+  - {fileID: 567724273}
+  - {fileID: 227896318}
+  - {fileID: 1962256746}
+  fullLife: {fileID: 21300000, guid: e575ef5405de58746bea32048b228646, type: 3}
+  emptyLife: {fileID: 21300000, guid: c6a7024d9ca2e294eae086a147275a02, type: 3}
 --- !u!1 &1227419479
 GameObject:
   m_ObjectHideFlags: 0
@@ -54852,7 +54836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f363c4f5470d884facb152becd4677c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthSystem: {fileID: 1224576123}
+  healthSystem: {fileID: 1224576126}
   damage: 1
   WeaponCollider: {fileID: 937593390}
 --- !u!1 &1337758103
