@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections;
+using System.Collections.Generic;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class HealthSystem : MonoBehaviour
     public Image[] lives;
     public Sprite fullLife;
     public Sprite emptyLife;
+
+    [SerializeField] private Animator animator;
 
     public void Update()
     {
@@ -47,11 +51,23 @@ public class HealthSystem : MonoBehaviour
         {
             SceneManager.LoadScene("SampleScene");
         }
+        else
+        {
+            animator.SetBool("Damage", true);
+            StartCoroutine(ResetHurtAnimation());
+        }
     }
+
     public void ReverseDamage(int amount, GameObject gameObject2)
     {
         health += amount;
         Destroy(gameObject2);
+    }
+
+    private IEnumerator ResetHurtAnimation()
+    {
+        yield return new WaitForSeconds(0.5f);
+        animator.SetBool("Damage", false);
     }
 
 }

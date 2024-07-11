@@ -61901,6 +61901,7 @@ MonoBehaviour:
   - {fileID: 1962256746}
   fullLife: {fileID: 21300000, guid: e575ef5405de58746bea32048b228646, type: 3}
   emptyLife: {fileID: 21300000, guid: c6a7024d9ca2e294eae086a147275a02, type: 3}
+  animator: {fileID: 556988472}
 --- !u!1 &1227419479
 GameObject:
   m_ObjectHideFlags: 0
