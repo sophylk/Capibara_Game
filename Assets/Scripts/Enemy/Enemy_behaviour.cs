@@ -19,7 +19,7 @@ namespace Assets.Scripts.Enemy
         public GameObject hotZone;
         public float health;
 
-
+        public Coolscript _spellDamage;
         public Coolscript _damage;
         public HealthSystem hero_hp;
 
@@ -190,6 +190,25 @@ namespace Assets.Scripts.Enemy
                 anim.SetBool("Hurt", true);
                 StartCoroutine(ResetHurtAnimation());
                
+            }
+        }
+
+        public void SpellTakeDamage()
+        {
+            if (health <= 0)
+            {
+                anim.SetBool("canDie", true);
+                Destroy(this.gameObject, 0.75f);
+
+                hero_hp.health += 1;
+
+            }
+            else
+            {
+                health -= _spellDamage.spelldamage;
+                anim.SetBool("Hurt", true);
+                StartCoroutine(ResetHurtAnimation());
+
             }
         }
 

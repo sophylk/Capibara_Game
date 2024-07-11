@@ -5,6 +5,7 @@ using UnityEngine;
 public class Coolscript : MonoBehaviour
 {
     private BoxCollider2D hitBox;
+    private BoxCollider2D Fire_spell;
 
     private float horizontal;
     private float speed = 3;
@@ -42,11 +43,13 @@ public class Coolscript : MonoBehaviour
     private float dashCooldown = 1f;
 
     public float damage;
+    public float spelldamage;
 
     private void Start()
     {
 
         hitBox = transform.Find("hitBox").GetComponent<BoxCollider2D>();
+        Fire_spell = transform.Find("Fire_spell").GetComponent<BoxCollider2D>();
     }
 
 
@@ -54,7 +57,7 @@ public class Coolscript : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown(KeyCode.Mouse0)) // Attack on Space key press.
+        if (Input.GetKeyDown(KeyCode.Mouse0)) // Attack on Mouse Left Button press.
         {
             animator.SetBool("Attack", true);
             Invoke("ActivateHitbox", 0.2f); // Activate hitbox after 0.2 seconds.
@@ -64,6 +67,17 @@ public class Coolscript : MonoBehaviour
         {
             animator.SetBool("Attack", false);
 
+        }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            //animator.SetBool("canSpell", true);
+            Invoke("ActivateSpellHitbox", 0.2f);
+            Invoke("DeactivateSpellHitbox", 0.4f);
+        }
+        else if (Input.GetKeyUp(KeyCode.F))
+        {
+            //animator.SetBool("canSpell", false);
         }
 
 
@@ -234,6 +248,16 @@ public class Coolscript : MonoBehaviour
     void DeactivateHitbox()
     {
         hitBox.gameObject.SetActive(false);
+    }
+
+    void ActivateSpellHitbox()
+    {
+        Fire_spell.gameObject.SetActive(true);
+    }
+
+    void DeactivateSpellHitbox()
+    {
+        Fire_spell.gameObject.SetActive(false);
     }
 
 

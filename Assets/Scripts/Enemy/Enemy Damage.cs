@@ -20,6 +20,7 @@ public class EnemyDamage : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
+
         if (collision.otherCollider != WeaponCollider) return;
         if (collision.gameObject.tag == "Player")
         {
@@ -29,7 +30,12 @@ public class EnemyDamage : MonoBehaviour
             WeaponCollider.enabled = false;
 
             Invoke("EnableCollider", 2f); // Re-enable collider after 1 second
-
         }
+    }
+
+    private void EnableCollider()
+    {
+        WeaponCollider.gameObject.SetActive(true);
+        WeaponCollider.enabled = true;
     }
 }
