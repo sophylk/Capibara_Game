@@ -188,8 +188,15 @@ namespace Assets.Scripts.Enemy
             {
                 health -= _damage.damage;
                 anim.SetBool("Hurt", true);
+                StartCoroutine(ResetHurtAnimation());
+               
             }
         }
 
+        private IEnumerator ResetHurtAnimation()
+        {
+            yield return new WaitForSeconds(0.5f);
+            anim.SetBool("Hurt", false);
+        }
     }
 }
