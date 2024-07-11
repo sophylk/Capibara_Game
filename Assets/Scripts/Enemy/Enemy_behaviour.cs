@@ -178,16 +178,16 @@ namespace Assets.Scripts.Enemy
 
             if (health <= 0)
             {
-                //anim.SetBool("canDie", true);
+                anim.SetBool("canDie", true);
                 Destroy(this.gameObject, 0.75f);
-                anim.Play("Death_bringer_of_death");
+
                 hero_hp.health += 1;
 
             }
             else
             {
                 health -= _damage.damage;
-                anim.Play("Hurt_bringer_of_death");
+                anim.SetBool("Hurt", true);
             }
         }
 
