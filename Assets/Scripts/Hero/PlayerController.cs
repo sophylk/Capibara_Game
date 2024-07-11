@@ -71,13 +71,13 @@ public class Coolscript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            //animator.SetBool("canSpell", true);
+            animator.SetBool("Spell", true);
             Invoke("ActivateSpellHitbox", 0.2f);
             Invoke("DeactivateSpellHitbox", 0.4f);
         }
         else if (Input.GetKeyUp(KeyCode.F))
         {
-            //animator.SetBool("canSpell", false);
+            animator.SetBool("Spell", false);
         }
 
 
