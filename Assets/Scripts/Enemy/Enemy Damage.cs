@@ -32,4 +32,9 @@ public class EnemyDamage : MonoBehaviour
 
         }
     }
+    private void EnableCollider()
+    {
+        WeaponCollider.gameObject.SetActive(true);
+        WeaponCollider.enabled = true;
+    }
 }

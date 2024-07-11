@@ -53,7 +53,7 @@ public class Dialog : MonoBehaviour
             Slash = true;
             Jump = false;
         }
-        if ((Input.GetKey(KeyCode.E) || Input.GetKey(KeyCode.Q)) && Slash)
+        if ((Input.GetKey(KeyCode.E) || Input.GetKey(KeyCode.Mouse1)) && Slash)
         {
 
             title.text = message_2;
@@ -69,7 +69,7 @@ public class Dialog : MonoBehaviour
 
 
         }
-        if (Input.GetKey(KeyCode.F) && Attack)
+        if (Input.GetKey(KeyCode.Mouse0) && Attack)
         {
 
             title.text = message_4;
