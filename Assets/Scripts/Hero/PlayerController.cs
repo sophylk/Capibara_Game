@@ -34,7 +34,7 @@ public class Coolscript : MonoBehaviour
 
     [SerializeField] private Animator animator;
 
-    
+
     private bool isDashing = false;
     private bool canDash = true;
     private float dashSpeed = 20f;
@@ -42,7 +42,6 @@ public class Coolscript : MonoBehaviour
     private float dashCooldown = 1f;
 
     public float damage;
-
 
     private void Start()
     {
@@ -55,16 +54,16 @@ public class Coolscript : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown(KeyCode.F)) // Attack on Space key press.
+        if (Input.GetKeyDown(KeyCode.Mouse0)) // Attack on Space key press.
         {
             animator.SetBool("Attack", true);
             Invoke("ActivateHitbox", 0.2f); // Activate hitbox after 0.2 seconds.
             Invoke("DeactivateHitbox", 0.4f); // Deactivate hitbox after 0.4 seconds.
         }
-        else if (Input.GetKeyUp(KeyCode.F)) // Attack on Space key press.
+        else if (Input.GetKeyUp(KeyCode.Mouse0)) // Attack on Space key press.
         {
             animator.SetBool("Attack", false);
-            
+
         }
 
 
@@ -78,7 +77,7 @@ public class Coolscript : MonoBehaviour
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
-            
+            animator.SetBool("Jump", false);
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
@@ -90,7 +89,7 @@ public class Coolscript : MonoBehaviour
             Flip();
         }
 
-        if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Mouse1) || Input.GetKeyDown(KeyCode.E))
         {
             if (canDash)
             {
@@ -110,13 +109,13 @@ public class Coolscript : MonoBehaviour
         {
             animator.SetBool("Run", false);
             animator.SetBool("Walk", true);
-            
+
             speed = speedwalk;
         }
 
         bool isWalk = Mathf.Abs(horizontal) > 0.1 && !Input.GetKey(KeyCode.LeftShift);
         animator.SetBool("Walk", isWalk);
-        
+
 
     }
 
@@ -124,14 +123,14 @@ public class Coolscript : MonoBehaviour
     {
         if (!isWallJumping && !isDashing)
         {
-            
+
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
         }
     }
 
     private bool IsGrounded()
     {
-        
+
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
@@ -157,7 +156,6 @@ public class Coolscript : MonoBehaviour
     {
         if (isWallSliding)
         {
-           
             isWallJumping = false;
             wallJumpingDirection = -transform.localScale.x;
             wallJumpingCounter = wallJumpingTime;
@@ -183,13 +181,15 @@ public class Coolscript : MonoBehaviour
                 localScale.x *= -1f;
                 transform.localScale = localScale;
             }
-            
+
             Invoke(nameof(StopWallJumping), wallJumpingDuration);
         }
+
         if (Input.GetButtonUp("Jump"))
         {
             animator.SetBool("Jump", false);
         }
+
     }
 
     private void StopWallJumping()
